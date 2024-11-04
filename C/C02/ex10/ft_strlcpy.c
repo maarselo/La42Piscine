@@ -6,33 +6,51 @@
 /*   By: mvillavi <mvillavi@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 12:44:07 by mvillavi          #+#    #+#             */
-/*   Updated: 2024/11/02 15:52:27 by mvillavi         ###   ########.fr       */
+/*   Updated: 2024/11/04 20:54:40 by mvillavi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
+unsigned int	ft_strlen(char *src)
+{
+	int	i;
+	int	suma;
+
+	i = 0;
+	suma = 0;
+	while (src[i] != '\0')
+	{
+		suma += 1;
+		i++;
+	}
+	return (suma);
+}
 
 unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 {
-	int	i;
-	
-	i = 0;	
-	while(i < size)
+	unsigned int	i;
+
+	i = 0;
+	if (size > 0)
 	{
-		dest[i] = src[i];
-		i++;
-	}
-	if (i == size)
+		while (i < size - 1 && src[i] != '\0')
+		{
+			dest[i] = src[i];
+			i++;
+		}
 		dest[i] = '\0';
-	return (strlen(src));
+	}
+	return (ft_strlen(src));
 }
+/*
+#include <stdio.h>
 
 int	main(void)
 {
-	char *src = "Hola Mundo";
-	char dest[10];
+	char	*src = "Hola";
+	char	dest[3];
 
-	printf("De origen: %d y era %s y destino es %s",ft_strlcpy(dest, src, 10), src, dest);
-	return(0);
+	printf("Longitud de src: %d\n", ft_strlcpy(dest, src, 3));
+	printf("Dest: %s\n", dest);
+	return (0);
 }
+*/
