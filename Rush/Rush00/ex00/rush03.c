@@ -6,11 +6,11 @@
 /*   By: mvillavi <mvillavi@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 15:44:53 by mvillavi          #+#    #+#             */
-/*   Updated: 2024/10/20 17:13:07 by mvillavi         ###   ########.fr       */
+/*   Updated: 2024/10/20 21:06:39 by mvillavi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_putchar.c"
+#include <unistd.h>
 
 void	ft_putchar(char c);
 
@@ -30,6 +30,7 @@ void	printchar(int x, int y, int i, int j)
 		ft_putchar(' ');
 	}
 }
+
 void	rush(int x, int y)
 {
 	int	i;
