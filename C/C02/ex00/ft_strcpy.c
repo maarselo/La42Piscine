@@ -6,15 +6,21 @@
 /*   By: mvillavi <mvillavi@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 15:40:25 by mvillavi          #+#    #+#             */
-/*   Updated: 2024/11/01 11:43:54 by mvillavi         ###   ########.fr       */
+/*   Updated: 2024/11/04 14:08:04 by mvillavi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-
 char	*ft_strcpy(char *dest, char *src)
 {
-	strcpy(dest, src);
+	int	i;
+
+	i = 0;
+	while (src[i] != '\0')
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	dest[i] = '\0';
 	return (dest);
 }
 /*
@@ -22,8 +28,8 @@ char	*ft_strcpy(char *dest, char *src)
 
 int	main(void)
 {
-	char	x[10] = "Hola";
-	char	y[10];
+	char	x[4] = "Hola";
+	char	y[4];
 
 	printf("El valor de copia es de: %s\n", ft_strcpy(y, x));
 	return (0);
