@@ -6,7 +6,7 @@
 /*   By: mvillavi <mvillavi@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 11:45:36 by mvillavi          #+#    #+#             */
-/*   Updated: 2024/11/06 19:51:22 by mvillavi         ###   ########.fr       */
+/*   Updated: 2024/11/06 23:41:55 by mvillavi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int	ft_strlowcase(char *str)
 char	*ft_strcapitalize(char *str)
 {
 	int	i;
-	
+
 	ft_strlowcase(str);
 	i = 1;
 	if (97 <= str[0] && str[0] <= 122)
