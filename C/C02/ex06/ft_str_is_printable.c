@@ -6,7 +6,7 @@
 /*   By: mvillavi <mvillavi@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 10:31:19 by mvillavi          #+#    #+#             */
-/*   Updated: 2024/11/01 11:42:19 by mvillavi         ###   ########.fr       */
+/*   Updated: 2024/11/06 19:50:44 by mvillavi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_str_is_printable(char *str)
 		return (1);
 	while (str[i] != '\0')
 	{
-		if (33 <= str[i] && str[i] <= 126)
+		if (32 <= str[i] && str[i] <= 126)
 			i++;
 		else
 			return (0);
@@ -31,7 +31,7 @@ int	ft_str_is_printable(char *str)
 
 int	main(void)
 {
-	char	str[] = "HOLAadios2024";
+	char	str[] = " ";
 
 	printf("%d\n", ft_str_is_printable(str));
 	return (0);
