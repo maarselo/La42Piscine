@@ -1,9 +1,9 @@
-# Piscine 42
-La Piscine es un bootcamp intensivo de programación de 26 días diseñado para probar no solo tus habilidades técnicas, sino también tu capacidad de aprendizaje, resolución de problemas y trabajo en equipo. Se enfoca en construir una base sólida en programación y fomentar la autonomía. 
+# Piscina 42
+La Piscina es un bootcamp intensivo de programación de 26 días diseñado para probar no solo tus habilidades técnicas, sino también tu capacidad de aprendizaje, resolución de problemas y trabajo en equipo. Se enfoca en construir una base sólida en programación y fomentar la autonomía. 
 
 Todos estos ejercicios estan pasados la Norminette, y con el determinado formato de 42.
 
-## Estructura de la Piscine
+## Estructura de la Piscina
 ### Shell:
 
 - Ejercicios iniciales para familiarizarse con comandos de Unix.
@@ -27,7 +27,7 @@ Todos estos ejercicios estan pasados la Norminette, y con el determinado formato
 
 - Aquí es donde realmente pruebas tu capacidad de trabajar bajo presión y en equipo.
 
-# Piscine Reloaded
+# Piscina Reloaded
 El Piscine Reloaded es un conjunto de 27 ejercicios diseñado para recordar y reforzar todos los conceptos aprendidos durante la Piscine original de 42. Es una oportunidad para volver a practicar las bases de la programación en C, consolidando las habilidades y perfeccionando el código.
 
 ### Objetivo
