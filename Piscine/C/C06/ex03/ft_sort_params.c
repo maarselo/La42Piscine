@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_sort_params.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mvillavi <mvillavi@student.42barcelon      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/12/23 22:52:23 by mvillavi          #+#    #+#             */
+/*   Updated: 2024/12/23 22:53:36 by mvillavi         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <unistd.h>
 
 void	ft_putchar(char c)
@@ -10,7 +22,7 @@ void	ft_putstr(char *str)
 	int	i;
 
 	i = 0;
-	while(str[i])
+	while (str[i])
 	{
 		ft_putchar(str[i]);
 		i++;
@@ -36,8 +48,8 @@ copias y no con los punteros originales.*/
 
 void	ft_swap(char **s1, char **s2)
 {
-	char *tmp;
-	
+	char	*tmp;
+
 	tmp = *s1;
 	*s1 = *s2;
 	*s2 = tmp;
@@ -49,7 +61,7 @@ int	main(int argc, char **argv)
 	int	y;
 
 	i = 1;
-	while(i < argc - 1)
+	while (i < argc - 1)
 	{
 		y = 1;
 		while (y < argc - 1)
@@ -68,5 +80,5 @@ int	main(int argc, char **argv)
 		ft_putstr(argv[i]);
 		i++;
 	}
-	return 0;	
+	return (0);
 }
